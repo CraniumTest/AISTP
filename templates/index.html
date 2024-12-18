@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Storytelling Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the AI Storytelling Platform</h1>
+    <form method="post" action="{{ url_for('generate_story') }}">
+        <label for="genre">Choose a genre:</label>
+        <input type="text" id="genre" name="genre" required>
+        <button type="submit">Generate Story</button>
+    </form>
+</body>
+</html>
